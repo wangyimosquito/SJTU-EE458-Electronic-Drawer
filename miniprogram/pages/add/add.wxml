@@ -1,0 +1,77 @@
+<!--pages/add/add.wxml-->
+
+<view>
+  <mp-form id="form">
+    <mp-cells>
+      <!-- 名称 -->
+      <mp-cell class="form_item" title="名称">
+        <input bindinput="inputNameChange" class="weui-input" placeholder="请输入名称" />
+      </mp-cell>
+      <!-- 价格 -->
+      <mp-cell class="form_item" title="价格">
+        <input bindinput="inputPriceChange" class="weui-input" placeholder="请输入价格（元）" />
+      </mp-cell>
+      <!-- 第三个是类别，生产日期和保质期会根据类别信息选择 -->
+      <mp-cell class="form_item" title="类别">
+        <view class="addr_ma_item province_select">
+          <view class="picker_wrap">
+            <picker mode="selector" bindchange="bindTypeChange" value="{{typeIndex}}" range="{{types}}">
+              {{types[typeIndex]}}
+            </picker>
+          </view>
+          <view class="addr_ma_icon">></view>
+        </view>
+      </mp-cell>
+      <!-- 位置 -->
+      <mp-cell class="form_item" title="位置">
+        <view class="addr_ma_item province_select">
+          <view class="picker_wrap">
+            <picker mode="selector" bindchange="bindPositionChange" value="{{positionIndex}}" range="{{positions}}">
+              {{positions[positionIndex]}}
+            </picker>
+          </view>
+          <view class="addr_ma_icon">></view>
+        </view>
+      </mp-cell>
+      <!-- 购买日期 -->
+      <mp-cell class="form_item" title="购买日期">
+        <view class="addr_ma_item province_select">
+          <view class="picker_wrap">
+            <picker mode="date" bindchange="bindPurchaseDayChange" start="2010-01-01" end="2040-12-31">
+              {{purchase_day}}
+            </picker>
+          </view>
+          <view class="addr_ma_icon">></view>
+        </view>
+      </mp-cell>
+      <!-- 生产日期 -->
+      <mp-cell class="form_item" wx:if="{{needExpiration}}" title="生产日期">
+        <view class="addr_ma_item province_select">
+          <view class="picker_wrap">
+            <picker mode="date" bindchange="bindProduceDayChange" start="2010-01-01" end="2040-12-31">
+              {{produce_day}}
+            </picker>
+          </view>
+          <view class="addr_ma_icon">></view>
+        </view>
+      </mp-cell>
+      <!-- 保质期 -->
+      <mp-cell class="form_item" wx:if="{{needExpiration}}" title="保质期">
+        <input bindinput="inputExpirationDateChange" class="weui-input" placeholder="请输入保质期（天）" />
+      </mp-cell>
+      <!-- 图片 -->
+      <mp-cell class="form_item">
+        <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uploadFile}}" max-count="1" files="{{files}}" title="图片" tips="请上传一张物品图片"></mp-uploader>
+      </mp-cell>
+      <!-- 备注 -->
+      <mp-cell class="form_item" title="备注">
+        <input bindinput="inputNotesChange" class="weui-input" placeholder="补充说明" />
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+</view>
+
+<!--添加按钮-->
+<view class="submit_btn_wrap">
+  <button class="weui-btn" type="primary" bindtap="addHandler">添加</button>
+</view>

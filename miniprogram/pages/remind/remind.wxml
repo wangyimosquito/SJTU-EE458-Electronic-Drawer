@@ -1,0 +1,29 @@
+<!--pages/remind/remind.wxml-->
+<view class="timeTitle">
+	今天是{{Y}}年{{M}}月{{D}}日
+</view>
+
+<!-- 标题分割线 -->
+<view class="line"></view>
+
+<view class="weui-slidecells">
+	<mp-slideview wx:for="{{res_item}}" buttons="{{[{src: '../../../images/slideview/delete.svg', data: item}]}}" icon="{{true}}" bindbuttontap="slideButtonTap">
+		<!-- 过期物品 -->
+		<view wx:if="{{res_day[index] < 0 }}">
+			<view class="ExpBgRec">
+				<text class="nameText">{{item.name}}</text>
+				<text class="resText">已过期{{-res_day[index]}}<text class="dayText">天</text></text>
+			</view>
+			<view class="line"></view>
+		</view>
+		<!-- 临期物品 -->
+		<view wx:else>
+			<view class="BgRec">
+				<text class="nameText">{{item.name}}</text>
+				<text class="resText">{{res_day[index]}}<text class="dayText">天</text></text>
+			</view>
+		</view>
+		<view class="line"></view>
+	</mp-slideview>
+</view>
+

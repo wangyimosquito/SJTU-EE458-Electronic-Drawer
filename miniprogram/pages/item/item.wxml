@@ -1,0 +1,15 @@
+<!--pages/item/item.wxml-->
+
+<!-- 物品分类区域 -->
+<view class="grid-list">
+  <navigator class="grid-item" wx:for="{{gridList}}" wx:key="id" url="/pages/info/info?id={{item.id}}&title={{item.name}}">
+    <image src="{{item.url}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+
+<!-- 添加物品按钮 -->
+<view class="add-button">
+  <image src="/images/add.png" 	bindtap="gotoAdd" mode="aspectFit"></image>
+</view>
+

@@ -1,0 +1,23 @@
+.circle[plain] {
+  padding: 0;
+  border: none;
+  width: 64rpx;
+	height: 64rpx;
+	position: fixed;
+	bottom: 5%;
+	right: 2%;
+}
+
+ 
+
+.image {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.title{
+  /* text-align: center;
+  color:#919e8b; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+<!-- 消费统计 -->
+<view class="title">总共花费: {{total_expense}}元</view>
+<view class="title">总共购买物品：{{Month_item_num}}件</view>
+<view class="line"></view>
+
+<!-- 顶部时限选择 -->
+<mp-form id="form">
+    <mp-cells>
+        <mp-cell class="form_item" title="账单时限">
+        <view class="addr_ma_item province_select">
+          <view class="picker_wrap">
+            <picker mode="selector" bindchange="mySelect" value="{{grade_name}}" range="{{grades}}">
+              {{grade_name}}
+            </picker>
+          </view>
+          <view class="addr_ma_icon"></view>
+        </view>
+      </mp-cell>
+  </mp-cells>
+</mp-form>
+
+<view wx:for="{{month_item}}">
+		<view class="weui-slidecell">
+			<text class="name">{{item.name}}</text>
+			<text class="otherText">{{item.price}}<text class="otherText">元</text></text>
+		</view>
+    <view class="line"></view>
+</view> 

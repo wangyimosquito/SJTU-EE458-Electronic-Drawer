@@ -1,0 +1,21 @@
+<!--pages/info/info.wxml-->
+
+<view class="weui-slidecells">
+  <mp-slideview wx:for="{{items}}" wx:key="_id" 
+  buttons="{{[{src: '../../../images/slideview/edit.svg', data: item},{src: '../../../images/slideview/delete.svg', data: item}]}}" icon="{{true}}"  bindbuttontap="slideButtonTap" bindtap="buttonTap" data-product="{{item}}">
+    <view class="items">
+      <view wx:if="{{item.photo_path==''}}" class="thumb">
+      <image src="../../images/defaultImage.png" mode="aspectFit"></image>
+    </view>
+    <view wx:else  class="thumb">
+      <image src="{{item.photo_path}}" mode="aspectFit"></image>
+    </view>
+    <view class="info">
+      <text class="name">{{item.name}}</text>
+      <text>价格：{{item.price}}元</text>
+      <text>位置：{{item.position}}</text>
+      <text>购买日期：{{item.purchase_day_str}}</text>
+    </view>
+    </view>
+  </mp-slideview>
+</view>

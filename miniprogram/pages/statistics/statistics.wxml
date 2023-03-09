@@ -1,0 +1,22 @@
+<!--pages/statistics/statistics.wxml-->
+
+<view class="title">
+    物品金额统计
+</view>
+<view >
+<canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" style="width: 740rpx; height: 300px;"></canvas>
+</view>
+
+<view class="title">
+    物品件数统计
+</view>
+
+<view class="bgContainer">
+<canvas canvas-id="pieCanvas" class="canvas" style="width: 740rpx; height: 300px;" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<!-- <navigator url="/pages/month/month" hover-class="navigator-hover"> -->
+<button class = "circle" plain="true" bindtap="gotoMonth">
+    <image mode="aspectFill" src="../../images/tabs/statistics.png" class="image"> </image>
+</button>
+<!-- </navigator> -->

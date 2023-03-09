@@ -1,0 +1,42 @@
+<!--pages/me/me.wxml-->
+<!-- <text>pages/me/me.wxml</text> -->
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 如何添加新的物品？\n
+A: 在首页点击黄色加号，在跳转的页面中可以填写物品详细信息。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 我可以添加新的物品种类吗？\n
+A: 小抽屉里能放置的物品种类是限定的，就是软件首页显示的9种物品，增添物品种类的功能目前还未上线。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 我可以添加新的位置信息吗？\n
+A: 目前暂不支持自定义添加位置信息，后续会考虑加上该功能。如果在位置选项中没有特别合适的，可以在备注中填写准确的位置以便查找。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 如果我添加的物品没有保质期该怎么办？\n
+A: 电子小抽屉在添加物品的页面会根据您选择物品种类来让您填写信息，只有食品、药品和化妆品三类物品会让您填写生产日期和保质期。同样的，在临过期提醒页面也只会显示存在保质期的物品和他们的余下保质天数（或者已过期天数）。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 如何查找某一类物品的清单？\n
+A: 在首页点击想要查找的物品图标即可查看该类物品的清单。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 统计页面的物品金额和物品件数统计结果是我的小抽屉内的全部物品吗？\n
+A: 是的。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 如果我想查看月度账单该怎么办？\n
+A: 点击下方导航栏的统计按钮，切换到导航页面后左下角有一个悬浮统计小按钮，点击该按钮可以切换到月度账单页面。在该页面的下拉选择框中还可以选择生成账单的时限，支持最近1个月，3个月，和6个月的账单计算。</text>
+</view>
+
+<view class="weui-slidecell">
+<text class="helpText">Q: 我有物品过期，想要从小抽屉中删除这个物品要怎么做？\n
+A: 若您发现临过期提醒中有物品已过期，直接左滑该物品条目点击删除按钮进行删除。</text>
+</view>

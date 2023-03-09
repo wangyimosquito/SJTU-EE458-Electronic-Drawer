@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "临过期提醒",
+  "usingComponents": {
+    "mp-slideview": "../../miniprogram_npm/weui-miniprogram/slideview/slideview"
+  }
+}

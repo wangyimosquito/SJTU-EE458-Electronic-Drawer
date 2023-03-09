@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/item/item",
+    "pages/statistics/statistics",
+    "pages/remind/remind",
+    "pages/me/me",
+    "pages/add/add",
+    "pages/info/info",
+    "pages/edit/edit",
+    "pages/month/month"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F7DC6F",
+    "navigationBarTitleText": "电子小抽屉",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/item/item",
+        "text": "物品",
+        "iconPath": "/images/tabs/item.png",
+        "selectedIconPath": "/images/tabs/item.png"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "/images/tabs/statistics.png",
+        "selectedIconPath": "/images/tabs/statistics.png"
+      },
+      {
+        "pagePath": "pages/remind/remind",
+        "text": "提醒",
+        "iconPath": "/images/tabs/remind.png",
+        "selectedIconPath": "/images/tabs/remind.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "帮助",
+        "iconPath": "/images/tabs/me.png",
+        "selectedIconPath": "/images/tabs/me.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

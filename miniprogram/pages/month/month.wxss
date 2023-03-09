@@ -1,0 +1,88 @@
+@import "../../utils/weui.wxss";
+
+.BgRec{
+	margin: 2% 5% 2% 5%;
+	height: 25px;
+	background: #ffd560;
+  padding: 0.5em;
+  /* font-size: 1.2em;
+	font-weight: 300; */
+  position: relative;
+	border-radius: 10px;
+}
+
+.nameText{
+	font-weight: 500;
+	/* font-size: large; */
+}
+
+.resText{
+	font-weight: 500;
+	/* font-size: larger; */
+	text-align: right;
+	float: right;
+}
+
+/* .dayText{
+	font-weight: bold;
+	font-size: large;
+	text-align: right;
+  float: right;
+} */
+
+.time {
+  text-align: right;
+  float: right;
+  font-size: 28rpx;
+}
+
+
+
+.form_item {
+  display: flex;
+  color: #666666;
+  font-size: 28rpx;
+}
+
+.picker_wrap {
+  display: flex;
+  flex: 5;
+}
+
+.addr_ma_icon {
+  font-size: 30rpx;
+  color: #acacac;
+}
+
+.title{
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.line{
+	margin: 0,0,0,0;
+	height: 1px;
+	border-bottom: 1rpx solid #efefef;
+}
+
+.weui-slidecell{
+  background-color:#FFFFFF;
+  border-radius:8px;
+  padding:10px;
+  line-height:1.4;
+  font-size:17px;
+	color:rgba(0,0,0,.9);
+	margin:8px;
+  /*text-align:right;*/
+}
+
+.name{
+	font-weight: bold;
+	font-size: 24rpx;
+}
+
+.otherText{
+	font-size: 24rpx;
+	text-align: right;
+	float: right;
+}

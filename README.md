@@ -1,12 +1,11 @@
-# 云开发 quickstart
+# Electronic Drawer
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+## Poster
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+This is the poster of our miniprogram. If you are interested in it, please scan the QR code in the bottom of the poster with Wechat. 
 
-## 参考文档
+![海报](.\img\海报.png)
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+## Inspiration
 
+Electronic Drawer is a versatile software application designed for both storage and financial management purposes. The inspiration behind this innovative program came from a personal experience of my roommate and me. One day, we purchased a carton of milk without paying attention to its expiration date. A week later, we drank the milk and obviously, we started feeling unwell. It took us several days to figure out the cause of our discomfort, which prompted us to come up with the idea of creating a mini-program that would notify us of the expiration dates of our food items. With this in mind, we decided to incorporate this feature into our software engineering project. The result is the Electronic Drawer, a handy tool that not only helps keep track of not only food but also makeup, medicines, and other objects' expiration dates but also aids in managing finances related to their expenses.

@@ -4,7 +4,7 @@
 
 This is the poster of our miniprogram. If you are interested in it, please scan the QR code in the bottom of the poster with Wechat. 
 
-![海报](img\海报.png)
+![海报](img/海报.png)
 
 ## Inspiration
 
